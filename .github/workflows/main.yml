@@ -23,9 +23,6 @@ jobs:
           java-version: '17'
           cache: gradle
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
@@ -37,5 +34,5 @@ jobs:
         with:
           name: PocketHome-debug-apk
           path: |
-            **/build/outputs/apk/**/*.apk
+            app/build/outputs/apk/**/*.apk
           if-no-files-found: error
