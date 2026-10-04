@@ -1,0 +1,8 @@
+{
+  "name": "pockethome-android",
+  "version": "1.0.0",
+  "description": "Android App",
+  "scripts": {
+    "build": "echo 'Not a node project'"
+  }
+}
