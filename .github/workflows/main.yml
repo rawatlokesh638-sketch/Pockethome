@@ -26,8 +26,9 @@ jobs:
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
+      # यहाँ हमने काम करने वाली डायरेक्टरी को साफ़ कर दिया है
       - name: Build PocketHome APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew :app:assembleDebug --stacktrace
 
       - name: Upload PocketHome APK
         uses: actions/upload-artifact@v4
